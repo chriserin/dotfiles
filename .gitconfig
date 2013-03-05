@@ -1,0 +1,18 @@
+[user]
+	name = Christopher Erin
+	email = chris.erin@gmail.com
+[core]
+	excludes = /home/chriserin/.gitignore
+	excludesfile = /home/chriserin/.gitignore
+	safecrlf = true
+	autocrlf = input
+[color]
+	ui = auto
+[alias]
+  co = commit
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
