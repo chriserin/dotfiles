@@ -1,0 +1,5 @@
+--type-set
+coffee=.coffee
+--ignore-dir=build
+--ignore-dir=node_modules
+--ignore-dir=vendor
