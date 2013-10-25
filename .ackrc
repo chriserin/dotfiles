@@ -1,5 +1,8 @@
 --type-set
 coffee=.coffee
+--type-set
+cucumber=.feature
 --ignore-dir=build
 --ignore-dir=node_modules
 --ignore-dir=vendor
+--ignore-dir=.req

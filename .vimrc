@@ -28,7 +28,7 @@ filetype plugin on
 filetype indent on
 
 set guioptions-=T
-colorscheme earthelements
+colorscheme elflord
 
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
@@ -40,3 +40,9 @@ function! <SID>SynStack()
   endif
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
+
+" turn off arrow keys in normal mode
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>

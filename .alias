@@ -1,17 +1,4 @@
-alias cl=clear
 alias go='(google-chrome &) 2> /dev/null'
 alias ff='(firefox &) 2> /dev/null'
-alias lf='ls -gohX --time-style=+ --color=always | cut -b 14-128'
-alias h='history 20'
-alias gv='gvim 2> /dev/null'
-alias begv='bundle exec gvim 2> /dev/null'
 alias ack='ack-grep'
-alias be='bundle exec'
-alias nba='(google-chrome http://sports.yahoo.com/nba/scoreboard &) &> /dev/null'
-alias mlb='(google-chrome http://sports.yahoo.com/mlb/scoreboard &) &> /dev/null'
-alias qr='(google-chrome http://www.zenspider.com/Languages/Ruby/QuickRef.html &) &> /dev/null'
-alias rubex='(google-chrome http://www.rubular.com &) &> /dev/null'
-alias gc='ruby ~/utils/git_wrapper/spec_commit.rb'
-alias gs='ruby ~/utils/git_wrapper/status.rb' #this crushes gs (GhostScript)
-
-echo 'read bash aliases'
+alias cdir='echo ${PWD##*/}'

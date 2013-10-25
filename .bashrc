@@ -19,6 +19,7 @@ HISTFILESIZE=2000
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
+shopt -s globstar
 
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
@@ -50,7 +51,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]-------------\[\033[00m\]  \[\033[01;32m\]\w$\[\033[00m\] '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]---\[\033[00m\]  \[\033[01;32m\]\w$\[\033[00m\] '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -104,12 +105,12 @@ fi
 
 [[ -s "/home/chriserin/.rvm/scripts/rvm" ]] && source "/home/chriserin/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-export PATH="$PATH:/home/chriserin/software/mongodb-linux-i686-2.0.2/bin:/home/chriserin/software/phantomjs-1.7.0-linux-i686/bin"
-
-echo 'read bashrc'
+export PATH="$PATH:/home/chriserin/software/mongodb-linux-i686-2.0.2/bin:/home/chriserin/open_source/phantomjs/bin"
 
 xrandr --output default --mode 1920x1080
 
 . ~/nvm/nvm.sh
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+export EDITOR=vim
